@@ -3,6 +3,7 @@
 // let nambo: number = 3443;
 // let check: boolean;
 // let num = <number>34;
+const name2 = 2342;
 // let surname: string|number  ;
 // console.log(typeof(a))
 // console.log(typeof(num))
@@ -16,9 +17,6 @@
 // }
 const arr = [1, 2, 3, 3];
 const arr2 = [2443, 3, 35, 53, 53, 3553];
-// arrays in typescript
-// const arr: [number, number,number ] = [23,4,34];
-// const arr2:Array<string> = ["yo", "bhai"]
 // objects in typescript
 // type Obj = {
 //     height: number,
