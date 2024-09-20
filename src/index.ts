@@ -1,42 +1,85 @@
-let number: number
+// let surname: string | number;
 
-number = 24434343
+// surname = 'hellow'
+// surname = 243523
 
-let newnum: number
-newnum = 42355
+
+
+// one way of defining types
+type Username = string | number
+
+
+// function myfunc(a: Username, b: Username): number {
+//     console.log(a, b)
+//     return 0;
+// }
+// myfunc(2, 3)
+
+
+// another way of defining types
+type Username2 = (a: number, b: number) => number;
+
+
+const myfunc: Username2 = (a, b) => {
+    console.log(a, b)
+    return 0
+}
+myfunc(2, 3)
+
+// arrays
+
+const arr: number[] = [22, 3, 42, 4, 2354, 32];
+const arr2: Array<number> = [22, 3, 42, 4, 2354, 32];
+
+const arrstring: string[] = ['hello wrodl']
+const arrstring2: Array<string> = ['hello wrodl']
+
+
+const arr5: Array<number | string> = ['kunal', 'khandelwal', 3, 4]
+
+const array6: [number, number, string] = [2, 2, 'ff']
+
+// objects
+
+const obj: {
+    height: number;
+    weight: number;
+    gender?: boolean
+} = {
+    height: 34,
+    weight: 43,
+}
 
 
 type myobjtype = {
-    name: string,
-    age: number
+    nambo: string;
+    surname: string;
+    rollno?: number;
+    func: () => void;
+    newobj: {
+        newnambo: string
+    }
 }
 
-interface myobj {
-    name: string,
-    age: number
+const obj2: myobjtype = {
+    nambo: 'kunal',
+    surname: 'khandelwal',
+    func: () => {
+        return 'hello world how are you i am fine what about you i don'
+    },
+    newobj: {
+        newnambo: 'kahtri'
+    }
 }
 
-const obj: myobj = {
-    name: "kunal", 
-    age: 123
-}
-
-
-type Username = Array<string | number>
-
-let myarr: Username = ['1', '2', 3255]
-
-type mytype = (a: number, b: number) => number
-
-const myfunc: mytype = (a, b) => {
-    console.log(a + b)
-    return 0;
-}
+console.log(obj2.func(), obj2.newobj.newnambo)
 
 
 
-console.log(myarr)
+// Functions
 
-const btn = document.getElementById("heading") as HTMLHeadingElement
 
-btn.onclick
+
+
+
+
