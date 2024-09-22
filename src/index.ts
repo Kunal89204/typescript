@@ -126,10 +126,17 @@ getData(productOne)
 
 // Type assertion
 
-const a = document.getElementById('btn')as HTMLElement
+const btn = document.getElementById("btn") as HTMLButtonElement
+const img  = document.getElementById("img") as HTMLImageElement
+const img2 = <HTMLImageElement>document.getElementById("img") 
+const img3  = document.getElementById("img")!
 
-a.onclick
+const form = document.getElementById('form')  as HTMLFormElement
 
+
+form.onsubmit = (e:SubmitEvent) => {
+    e.preventDefault()
+}
 
 
 
