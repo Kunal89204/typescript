@@ -11,6 +11,7 @@ const arr2 = [22, 3, 42, 4, 2354, 32];
 const arrstring = ['hello wrodl'];
 const arrstring2 = ['hello wrodl'];
 const arr5 = ['kunal', 'khandelwal', 3, 4];
+// tuple
 const array6 = [2, 2, 'ff'];
 // objects
 const obj = {
@@ -28,4 +29,7 @@ const obj2 = {
     }
 };
 console.log(obj2.func(), obj2.newobj.newnambo);
-// Functions
+const funcy = (...m) => {
+    return m;
+};
+funcy(1, 2, 3, 4, 5, 7, 8);
